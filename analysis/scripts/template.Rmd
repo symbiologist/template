@@ -34,7 +34,7 @@ theme_set(theme_publication()) # set default theme
 
 ### Directories
 ```{r, message=FALSE}
-analysis_dir <- 'analysis/' # analysis file output directory
+analysis_dir <- 'analysis/output/' # analysis file output directory
 data_dir <- 'data/' # data file output directory
 
 dir.create(analysis_dir, showWarnings = FALSE)
