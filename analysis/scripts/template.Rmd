@@ -23,11 +23,11 @@ file.edit(output_file)
 
 ### Load custom themes and functions
 ```{r, message=FALSE}
-source('analysis/themes.R') # themes for all project components
+source('analysis/scripts/themes.R') # themes for all project components
 
-source('analysis/functions.R') # functions for all project components
+source('analysis/scripts/functions.R') # functions for all project components
 
-source('analysis/scfxns.R') # functions for scRNA-Seq analysis
+source('analysis/scripts/scfxns.R') # functions for scRNA-Seq analysis
 
 theme_set(theme_publication()) # set default theme
 ```
