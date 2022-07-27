@@ -1,0 +1,43 @@
+---
+title: "GitHub Setup"
+author: "David Wu"
+output: html_notebook
+---
+## Purpose
+Ensure proper GitHub SSH setup 
+
+## Setup
+Set working directory to project directory
+
+### Check remotes
+```{r}
+### Set SSH over HTTPS
+
+usethis::git_remotes()
+```
+### Get project / repo name
+
+```{r}
+username <- 'symbiologist'
+```
+
+```{r}
+repo <- basename(rprojroot::find_rstudio_root_file())
+repo
+```
+```{r}
+ssh <- paste0('git@github.com:', username, '/', repo, '.git')
+ssh
+```
+
+
+```{r}
+usethis::use_git_remote(
+  "origin",
+  ssh,
+  overwrite = TRUE
+)
+
+usethis::git_remotes()
+```
+
