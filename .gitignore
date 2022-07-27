@@ -40,3 +40,6 @@ vignettes/*.pdf
 
 # R notebook html files
 *.nb.html
+
+# Large data files; UNCOMMENT below
+# data

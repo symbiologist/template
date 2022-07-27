@@ -11,8 +11,6 @@ Set working directory to project directory
 
 ### Check remotes
 ```{r}
-### Set SSH over HTTPS
-
 usethis::git_remotes()
 ```
 ### Get project / repo name
