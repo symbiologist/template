@@ -16,6 +16,7 @@ file.edit(output_file)
 ```
 
 ### Use the here package for robust relative paths
+Alternatively, set "Evaluate chunks in directory" to "Project" in Global Options > R Markdown
 ```{r}
 library(here)
 ```
