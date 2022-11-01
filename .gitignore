@@ -41,8 +41,12 @@ vignettes/*.pdf
 # R notebook html files
 *.nb.html
 
-# Large data files; UNCOMMENT below
-# data
+# MacOS files
+.DS_Store
 
 # Template .Rproj file
 template.Rproj
+
+# Large data files; UNCOMMENT below
+# data
+
