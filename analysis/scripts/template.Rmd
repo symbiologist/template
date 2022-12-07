@@ -1,7 +1,8 @@
 ---
 title: "Template"
 author: "David Wu"
-output: html_notebook
+output: 
+  pdf_document: dev: cairo_pdf
 ---
 ## Purpose
 Template
