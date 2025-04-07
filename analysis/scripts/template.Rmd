@@ -31,10 +31,20 @@ dir.create(analysis_dir, showWarnings = FALSE)
 dir.create(data_dir, showWarnings = FALSE)
 ```
 
+### Google Drive connection
+```{r}
+library(googledrive)
+library(googlesheets4)
+library(gargle) # install.packages('gargle')
+options(gargle_oauth_email = TRUE)
+
+ss <- drive_get('')
+sheet <- read_sheet(ss, sheet = '')
+```
+
 ### Libraries
 ```{r echo=FALSE, message=FALSE}
 library(tidyverse)
-library(Seurat)
 
 library(wutilities) # devtools::install_github('symbiologist/wutilities')
 theme_set(theme_dwu()) # set default theme
