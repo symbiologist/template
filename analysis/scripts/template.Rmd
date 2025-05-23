@@ -1,8 +1,6 @@
 ---
 title: "Template"
 author: "David Wu"
-output: 
-  pdf_document: dev: cairo_pdf
 ---
 ## Purpose
 Template
@@ -45,7 +43,9 @@ sheet <- read_sheet(ss, sheet = '')
 ### Libraries
 ```{r echo=FALSE, message=FALSE}
 library(tidyverse)
-
+library(rcartocolor)
+library(ggforce)
+library(ggethemes)
 library(wutilities) # devtools::install_github('symbiologist/wutilities')
 theme_set(theme_dwu()) # set default theme
 ```
