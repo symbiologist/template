@@ -47,7 +47,7 @@ library(rcartocolor)
 library(ggforce)
 library(ggethemes)
 library(wutilities) # devtools::install_github('symbiologist/wutilities')
-theme_set(theme_dwu()) # set default theme
+theme_set(theme_dwu(base_size = 16)) # set default theme
 ```
 
 ### Import files
