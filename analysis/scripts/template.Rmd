@@ -22,11 +22,10 @@ library(here)
 
 ### Directories
 ```{r, message=FALSE}
-analysis_dir <- here('analysis/output/') # analysis file output directory
-data_dir <- here('data/') # data file output directory
-
-dir.create(analysis_dir, showWarnings = FALSE)
-dir.create(data_dir, showWarnings = FALSE)
+output_dir <- here('output/***') # analysis file output directory
+plot_dir <- here('output/plots')
+dir.create(output_dir, showWarnings = FALSE)
+dir.create(plot_dir, showWarnings = FALSE)
 ```
 
 ### Google Drive connection
@@ -45,9 +44,11 @@ sheet <- read_sheet(ss, sheet = '')
 library(tidyverse)
 library(rcartocolor)
 library(ggforce)
-library(ggethemes)
+library(ggthemes)
+library(ggrepel)
+library(patchwork)
 library(wutilities) # devtools::install_github('symbiologist/wutilities')
-theme_set(theme_dwu(base_size = 16)) # set default theme
+theme_set(theme_dwu(base_size = 14)) # set default theme
 ```
 
 ### Import files
@@ -67,4 +68,3 @@ theme_set(theme_dwu(base_size = 16)) # set default theme
 ```{r}
 sessionInfo()
 ```
-
