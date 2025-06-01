@@ -1,1 +1,1 @@
-# template
+# R data science template
